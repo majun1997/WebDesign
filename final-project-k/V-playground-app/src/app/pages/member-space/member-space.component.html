@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="col-12 col-md-4 col-sm-12 left">
+      <nb-card accent="info">
+        <nb-card-header>
+          <div class="title">
+            <a routerLink="/pages/upload-artwork" nbButton> <nb-icon icon="star"></nb-icon> Upload Artwork</a>
+          </div>
+        </nb-card-header>
+        <nb-card-body>
+          <div class="info">
+            <div class="picture">
+              <nb-user [picture] = "myProfile?.profileImg"
+              [name]="myProfile?.name"
+              size = "large"
+              onlyPicture>
+              </nb-user>
+            </div>
+            <div class="details">
+              <h4 class="name">{{myProfile.name}}</h4>
+              <div class="location">{{myProfile.location}}</div>
+              <div class="bio">{{myProfile.bio}}</div>
+            </div>
+          </div>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="right">
+      <div class="col-md-6 artwork" *ngFor="let artwork of artworklist">
+        <!--use ng switch to choose the different tag of artwork-->
+        <nb-card size="small">
+          <nb-card-body>
+            <div class="hover-menu up">
+              <a class="button delete" (click)=deleteartwork(artwork)>Delete</a>
+            </div>
+            <div class="artwork-video" *ngIf="artwork.artworkdetail.artworktype === 'input-youtube'" (click)=handleclick(artwork._id) >
+                <iframe width="480" height="320" [src]="artwork.artworkdetail.url | ArtworkpipeComponent" frameborder="0" allowfullscreen="0" ></iframe>
+            </div>
+            <!-- <div *ngIf="artwork.artworkdetail.artworktype === 'input-mp4'" (click)=handleclick(artwork._id) >
+                <video  onmouseover="this.play()" onmouseout="this.load()" class="video-js vjs-default-skin" loop  data-setup='{}' poster="{{artwork.artworkdetail.poster}}" >
+                    <source src='{{artwork.artworkdetail.url}}; ' type="video/mp4">
+                </video>
+            </div> -->
+            <div class="artwork-img" *ngIf="artwork.artworkdetail.artworktype === 'input-photo'"  (click)=handleclick(artwork._id)>
+                <img src='{{artwork.artworkdetail.url}}'>
+            </div>
+            <div class="hover-menu down">{{artwork.name | clip}}
+              <a class="button detail" (click)=handleclick(artwork._id) >Detail</a>
+            </div>
+          </nb-card-body>
+        </nb-card>
+        &nbsp;
+      </div>
+    </div>
+
+</div>
+
+

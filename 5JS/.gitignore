@@ -1,0 +1,5 @@
+#ignore .log files as before
+*.log
+/node_modules/
+/esdocs/
+package-lock.json

@@ -1,0 +1,26 @@
+.container{
+    background-color: rgba(0,0,0,0.2);
+    padding: 10px;
+    margin:auto;
+}
+
+.container-1{
+    width:800px;
+    height:650px;
+    margin:auto;
+}
+.value{
+    padding: 10px;
+    font-size: 25px;
+    margin:auto;
+}
+.container-2{
+    width:600px;
+    height:350px;
+    margin:auto;
+}
+.container-2{
+    width:500px;
+    height:200px;
+    margin:auto;
+}

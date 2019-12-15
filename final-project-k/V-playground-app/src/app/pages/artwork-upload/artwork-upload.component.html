@@ -1,0 +1,88 @@
+<div class="container">
+  <nb-flip-card>
+    <nb-card-front>
+      <nb-card status="info">
+        <nb-card-header>Upload Artwork: Picture</nb-card-header>
+        <nb-card-body>
+          <div class="upload-area">
+            <div class="col-md-4 info">
+              <div class="form-group">
+                <label class="label" for="inputTitle">Title</label>
+                <div>
+                  <input type="text" id="inputTitle" [(ngModel)]="newPicture.name" nbInput fullWidth fieldSize="large" placeholder="Title">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="label" for="inputDesc">Description</label>
+                <div>
+                  <textarea id="inputDesc" rows="8" nbInput [(ngModel)]="newPicture.description" fullWidth placeholder="Description"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="label" for="inputImg">Upload Picture</label>
+                <div class="upload">
+                  <input id="inputImg" type="file" accept="image/*" class="btn" (change)="uploadImg($event)">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 preview-img">
+              <img [src]="previewUrl" >
+            </div>
+          </div>
+          </nb-card-body>
+        <nb-card-footer>
+          <div class="action">
+            <div class="col-md-4">
+              <button  nbButton outline (click)="goBack()" status="danger">Back</button>
+            </div>
+            <div class="col-md-4 offset-md-2">
+              <button class="btn" nbButton hero (click)="publishArtwork(newPicture)" status="info">Publish your work</button>
+            </div>
+          </div>
+        </nb-card-footer>
+      </nb-card>
+    </nb-card-front>
+    <nb-card-back>
+      <nb-card status="warning">
+        <nb-card-header>Upload Artwork: Video</nb-card-header>
+        <nb-card-body>
+          <div class="upload-area">
+            <div class="col-md-4 info">
+              <div class="form-group">
+                <label class="label" for="inputTitle">Title</label>
+                <div>
+                  <input type="text" id="inputTitle" [(ngModel)]="newVideo.name" nbInput fullWidth fieldSize="large" placeholder="Title">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="label" for="inputDesc">Description</label>
+                <div>
+                  <textarea id="inputDesc" rows="8" nbInput [(ngModel)]="newVideo.description" fullWidth placeholder="Description"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="label" for="inputUrl">Video Url (YouTube)</label>
+                <div class="upload">
+                  <input type="text" id="inputUrl" nbInput [(ngModel)]="newVideoDetail.url" fullWidth placeholder="YouTube Url" >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 preview-img">
+              <iframe width="100%" height="100%" [src]="newVideoDetail.url | ArtworkpipeComponent" frameborder="0" allowfullscreen="0" ></iframe>
+            </div>
+          </div>
+        </nb-card-body>
+        <nb-card-footer>
+            <div class="action">
+              <div class="col-md-4">
+                <button  nbButton outline (click)="goBack()" status="danger">Back</button>
+              </div>
+              <div class="col-md-4 offset-md-2">
+                <button class="btn" nbButton hero (click)="publishArtwork(newVideo)" status="warning">Publish your work</button>
+              </div>
+            </div>
+        </nb-card-footer>
+      </nb-card>
+    </nb-card-back>
+  </nb-flip-card>
+</div>

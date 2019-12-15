@@ -1,0 +1,21 @@
+h1
+{
+    color:red;
+}
+
+.heading{
+    font-weight: bolder;
+    text-align:center;
+    padding: 10px;
+    width:100%;
+    color: #153e7f;
+
+}
+#first_dev
+{
+    color:blue;
+}
+
+div > p{
+    color:red;
+}

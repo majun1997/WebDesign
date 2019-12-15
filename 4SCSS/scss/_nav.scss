@@ -1,0 +1,53 @@
+ //this page is all for nav
+ @mixin nav {
+     a:hover
+    {
+        color : $heading-color;
+        background-color: white;
+    }
+    
+    width:99%;
+    background-color: white;
+}
+/*public function for all label*/
+.navbar{
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    position:fixed;
+    display: inline-block;
+    @include nav();
+}
+//set all div
+.link
+{
+    //position: relative;
+    display:inline;
+    margin-left: 300px;
+    
+
+}
+//set all tag
+
+.navbarList{
+    @extend .link;
+    text-decoration: none;
+    @include nav();
+    color:black;
+    margin-left: 20px;
+}
+
+.contactus{    
+    
+    margin-right:30px;
+    margin-left: 30px;
+    color:$white-color;
+    background-color: $heading-color;
+    text-decoration-line: none;
+    font-size: 25px;
+    width:200px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;      
+}
+/*this scss is for navbar, have havor*/

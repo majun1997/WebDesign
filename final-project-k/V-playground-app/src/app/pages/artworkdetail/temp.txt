@@ -1,0 +1,3 @@
+<nb-list-item *ngFor="let comment of artwork.comments">
+                    
+                </nb-list-item>

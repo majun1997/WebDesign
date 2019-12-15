@@ -1,0 +1,19 @@
+{
+    "source": "./src",
+    "destination": "./esdocs",
+    "includes": [
+      "\\.(js|jsx|vue)$" 
+    ],
+    "excludes": [
+      "(bundle\\.js|export\\.js)$" 
+    ],
+    "index": "./README.md", 
+    "package": "./package.json",
+    "outputAST": true, 
+    "plugins": [
+      { "name": "esdoc-standard-plugin"  
+      }
+      
+      
+    ]
+  }

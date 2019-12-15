@@ -1,0 +1,27 @@
+.blue{
+    position: relative;
+    background-color: #107eec;
+    z-index: 2;
+}
+.green{
+    position: absolute;
+    background-color: #56ec10;
+}
+.orange{
+    position: fixed;
+    background-color:#ec7310;
+}
+.yellow{
+    position: static;
+    background-color:#eccf10;
+    z-index: 1;
+}
+.yellowsticky{
+    position: sticky;
+    background-color:#eccf10;
+}
+.green,.orange,.yellow,.yellowsticky,.blue{
+    top:10px;
+    left:10px;
+}
+

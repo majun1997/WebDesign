@@ -1,0 +1,28 @@
+<div class="card-row">
+  <div class="display-panel col-md-10 col-xs-10" style="margin: auto;">
+    <nb-card size="medium">
+      <nb-card-body>
+        <nb-tabset>
+          <nb-tab tabTitle="following">
+            <ul style="list-style: none;">
+              <li *ngFor="let item of following_info" style="margin: 30px;">
+                  <nb-user [name]="item?.name"
+                  [picture] = "item?.profileImg"
+                  (click)=gotomember(item.id)></nb-user>
+              </li>
+            </ul>
+          </nb-tab>
+          <nb-tab tabTitle="follower">
+              <ul style="list-style: none;">
+                  <li *ngFor="let item of follower_info" style="margin: 30px;">
+                      <nb-user [name]="item?.name"
+                      [picture] = "item?.profileImg"
+                      (click)=gotomember(item.id)></nb-user>
+                  </li>
+                </ul>
+        </nb-tab>
+        </nb-tabset>
+      </nb-card-body>
+    </nb-card>
+ </div>
+</div>

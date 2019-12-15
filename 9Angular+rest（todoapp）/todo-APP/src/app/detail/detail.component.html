@@ -1,0 +1,22 @@
+<div class="todo-item" >
+    <div class="title">
+        <span>title:</span>
+        <div contenteditable=true class='edit' id="title"><span>{{todos.title}}</span></div>
+    </div>
+    <div class="createdata">
+        <span>create data:</span><span id="time">{{todos.createdata}}</span> 
+    </div>
+    <div class="content">
+            <span>content:</span> 
+            <div contenteditable=true class='edit' id="content"><span>{{todos.content}}</span></div>
+    </div>    
+    <div class="due">
+            <span>due data:</span> 
+            <div contenteditable=true class='edit' id="due"><span>{{todos.due}}</span></div>
+    </div>  
+    <div class="control">
+        <button (click)="update()">save</button>
+        <button (click)="delete()">delete</button>
+    </div>
+</div>
+      

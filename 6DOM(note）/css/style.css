@@ -1,0 +1,56 @@
+.fontbold{
+    font-weight: bold;
+    
+}
+.fontbold .fontbold{
+    font-weight: normal;
+}
+.fontitalic{
+    
+    font-style: italic;
+}
+.fontitalic .fontitalic{
+    font-style: normal;
+}
+.fontunderline{
+    text-decoration-line: underline;
+    
+}
+.fontunderline .fontunderline{
+    text-decoration-line:none;
+    
+}
+.document{
+    width: 95%;
+    height: 1000px;
+    background-color: grey;
+        
+    word-wrap:break-word; 
+    word-break:break-all;
+}
+.justalign{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.rightalign{
+    text-align: right;
+}
+.leftalign{
+    text-align:left;
+}
+.centalign{
+    text-align:center;
+}
+.control{
+    width:98%;
+    height:50px;
+    margin:auto;
+    background-color: honeydew;
+}
+.textEditor{
+    height:95%;
+    width:98%;
+    margin:auto;
+    margin-top:10px;
+    background-color: ivory;
+}

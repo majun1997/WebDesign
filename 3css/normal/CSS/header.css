@@ -1,0 +1,17 @@
+header>div>h1{
+    font-family: 'Righteous', cursive;
+    color:black;
+    font-size:80px;
+}
+/*  change the header h1 display.   */
+header>div>h2{
+    font-family: sans-serif;
+    color:black;
+    font-size:25px;
+    font-weight: normal;
+}
+/*  change the header h2 display.   */
+header>div{
+    line-height: 10px;
+}
+/*  change the line height  */

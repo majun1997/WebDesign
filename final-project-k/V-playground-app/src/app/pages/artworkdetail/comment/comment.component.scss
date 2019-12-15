@@ -1,0 +1,46 @@
+
+
+.comment-display{
+    height: 90%;
+    overflow:auto;
+    //border: rgb(138, 138, 138) 1px solid;
+    word-break:break-all 
+    
+}
+
+.my_commit{
+    height:10%;
+    width:100%;
+    display: inline-block;
+    button{
+
+        margin-left:5px;
+        width:100%;
+    }
+    .button_input{
+        margin:auto;
+        display: inline-block;
+        width:15%;
+        float: right;
+        height:30px;
+    }
+    .input-content-container{
+        font-size: 25px;
+        overflow: auto;
+        margin:auto;
+        background-color:	#f2f6ff;
+        height: 30px;
+        width: 80%;
+        border-radius : 10px;
+        display:inline-flex;
+        align-items: center;
+        .input-content{
+            outline: none;
+            margin: auto;
+            height: 100%;
+            width: 95%;
+            
+        }
+    }
+    
+}

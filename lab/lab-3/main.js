@@ -1,0 +1,17 @@
+var variable1='100.00';
+let variable2="2134";
+const variable3=`102+${variable1}`;
+variable2="reassigned";
+let variable4=new Number(3);
+let isenabled=true;
+console.log(typeof variable1);
+console.log(variable2);
+console.log(variable3);
+variable1 =100;
+console.log(typeof variable1);
+let empty =null;
+let notexist=undefined;
+console.log(empty);
+console.log(typeof empty);
+console.log(typeof notexist);
+console.log(notexist);

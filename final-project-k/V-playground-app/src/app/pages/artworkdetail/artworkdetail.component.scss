@@ -1,0 +1,87 @@
+nb-card.artwork-detail-display{
+    nb-card-header{
+        display: inline-block;
+        h3{
+            display: inline;
+            margin-left: 1.5rem;
+            color: #444;
+        }
+        .user{
+            float: right;
+            display: inline-block;
+
+        }
+        .follow-icon{
+            float: right;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+    nb-card-body{
+        text-align: center;
+        width:100%;
+        .artwork-video{
+            max-width: 100%;
+            max-height: 480px;
+        }
+        .artwork-img{
+            max-width: 100%;
+            max-height: 480px;
+        }
+    }
+    nb-card-footer{
+        margin:auto;
+        button{
+            margin-left:20px;
+        }
+    }
+}
+.artwork-detail{
+    width:78%;
+
+}
+.artwork-detail-page{
+    width:100%;
+    display:inline-flex;
+
+}
+app-comment{
+    width: 20%;
+    margin-left: 10px;
+}
+span{
+    margin-left: 10px;
+    font-size: 20px;;
+}
+
+.button {
+  color: #757575;
+  margin: 0;
+  margin-left: 1rem;
+  margin-top: 0.375rem;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.07);
+  min-width: 4.625rem;
+  padding: 0.375rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.0625rem;
+  letter-spacing: .02em;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.25rem;
+  float: right;
+  font-weight: 600;
+}
+
+.following {
+  background-color:	#00b887;
+  color: white;
+}
+
+nb-user {
+  cursor: pointer;
+}

@@ -1,0 +1,114 @@
+@font-face{
+    font-family: JunMa;
+    src:
+    url('font/Debby-Free-Font/Debby-Free-Font/Debby.otf'),  
+    url('font/Debby-Free-Font/Debby-Free-Font/Debby.ttf');    
+}
+.a+.asd{
+    font-size: 100px;
+}
+/*  This is a font-style from internet, Debby, It is free for us;https://befonts.com/debby-font.html   */
+html{
+    background:rgba(255, 235, 205, 0.76);
+}
+header>div>h1{
+    font-family: JunMa;
+    color:black;
+    font-size:80px;
+}
+/*  change the header h1 display.   */
+header>div>h2{
+    font-family: sans-serif;
+    color:black;
+    font-size:20px;
+}
+/*  change the header h2 display.   */
+header>div{
+    line-height: 10px;
+}
+/*  change the line height  */
+
+.navbar {
+    overflow: hidden;
+    background-color:blanchedalmond;
+    font-size: 25px;
+}
+/*set the default navbar*/
+.navbar a {
+    overflow: hidden;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    height:40px;
+    width: 200px;
+    text-decoration: none;
+}
+/*set navbar link display*/
+.navbar a:hover {
+    background-color:rgba(247, 209, 151, 0.425);
+    color: black;
+    text-decoration:underline;
+    font-size:30px;
+}
+/* navbar display with high light the choosen and enlarge the choosen*/
+.box{
+    background: #e4f7fd61;
+}
+/* use this to divide the page.*/
+.box :hover {
+    /*background-color:rgba(247, 209, 151, 0.425);*/
+    font-size:1.2em;    /*I think it will enlarge the font with 120%*/
+}
+/*if we want to read the paragraph, it will highlight and be larger.*/
+.box .platform{
+    position: relative;
+    overflow: hidden;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    float: left; /*this may be used to display in line?*/
+    width: 470px;
+    height: 300px;    
+    border: 1px solid black;
+    
+}
+/*set the width and height for one box and use margin to control the panel. add the border.*/
+.platform div.head{
+    text-align: center;
+    
+    margin:auto;
+    line-height:51px;
+}
+/*set the box head*/
+.platform div.head h1{
+    font-size:20px;
+    font-weight:bolder;
+}
+/*set the h1 style*/
+.platform div.para{
+    text-align: left;
+    font-size: 15px;
+    text-indent: 2em;
+}
+/*set the box para*/
+.platform div.foot{
+    text-align: right;
+    position: absolute; 
+    bottom: 0; 
+    right: 0;
+    font-size: 13px;
+}
+/*set the box footer*/
+.platform point{
+    font-size: 16px;
+    color: green
+}
+/*set the high light area*/
+p::first-letter {  
+    font-weight: bold;  
+    font-size: 1.2em;  
+ }
+ /*set the first-letter larger*/

@@ -1,0 +1,15 @@
+<table>
+                <th>title</th>
+                <th>createdata</th>
+                <th>due</th>
+                <th>content</th>
+                <th>option</th>
+<tr class="todo-item" *ngFor="let todo of todos">
+        <td class='title'>{{todo.title}}</td>
+        <td class='createdata'>{{todo.createdata}}</td>   
+        <td class='due'>{{todo.due}}</td>
+        <td class='content'>{{todo.content}}</td>
+        <td class='readmore'><a href={{todo.id}}>  readmore</a></td>
+</tr>
+</table>
+      

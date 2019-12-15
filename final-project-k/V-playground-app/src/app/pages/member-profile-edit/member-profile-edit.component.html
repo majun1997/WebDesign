@@ -1,0 +1,47 @@
+<div class="row center">
+  <div class="col-12 col-md-8">
+    <nb-card>
+      <nb-card-header>
+        <nb-user [name]="titleName"
+        [picture] = "titleImg">
+        </nb-user>
+      </nb-card-header>
+      <nb-card-body>
+<!--detail of users profile-->
+        <div class="form-group row">
+          <label class="label col-sm-3 col-form-label" for="inputName">Name</label>
+          <div class="col-sm-9">
+            <input type="text" id="inputName" [(ngModel)]="myProfile.name" nbInput fullWidth fieldSize="large" placeholder="Name">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="label col-sm-3 col-form-label" for="inputLocation">Location</label>
+          <div class="col-sm-9">
+            <input type="text" id="inputLocation" [(ngModel)]="myProfile.location" nbInput fullWidth fieldSize="large" placeholder="Location">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="label col-sm-3 col-form-label" for="inputBio">Bio</label>
+          <div class="col-sm-9">
+            <textarea id="inputBio" rows="5" nbInput [(ngModel)]="myProfile.bio" fullWidth placeholder="Bio"></textarea>
+          </div>
+        </div>
+<!--upload function to let user upload their profile Image-->
+        <div class="form-group row">
+          <label class="label col-sm-3 col-form-label" for="inputImg">Profile Image</label>
+          <div class="col-sm-9">
+            <input name="img" type="file" accept="image/*" id="inputImg" nbInput (change)="uploadImg($event)" fullWidth>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-3">
+            <button nbButton outline (click)="goBack()" status="info" >Back</button>
+          </div>
+          <div class="col-sm-9">
+            <button nbButton hero (click)="updateMyProfile()" status="info">Save Profile</button>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>

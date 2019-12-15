@@ -1,0 +1,33 @@
+<div class="comments">
+    <nb-card size="giant">
+        <nb-card-header>Comments</nb-card-header>
+        
+        <div class='comment-display'>            
+            <nb-list>
+                <nb-list-item *ngFor="let commentdetail of displaycomment;let i=index;">
+                    
+                    <nb-user size="tiny"
+                            name="{{commentdetail.member.name}}"
+                            picture="{{commentdetail.member.profileImg}}"
+                            onlyPicture></nb-user>
+                    <p>{{commentdetail.comment}}</p>
+                    
+                </nb-list-item>
+                
+            </nb-list>
+        </div>
+        <nb-card-footer>
+            <div class = "my_commit">
+                    <div class="input-content-container" id="input-content-container">
+                        <div contenteditable="true" class="input-content" id="input-content">
+                            
+                        </div>
+                    </div>
+                    <div class="button_input">
+                        <button (click)="submitcomment()" nbButton outline hero shape="round" size="small" status="info"><nb-icon icon="arrow-upward-outline"></nb-icon></button>
+                    </div>
+            </div>
+        </nb-card-footer>
+        
+    </nb-card>
+</div>

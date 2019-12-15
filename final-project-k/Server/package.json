@@ -1,0 +1,38 @@
+{
+  "name": "assignment-8-phoenixmay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-fall-2019/assignment-8-PhoenixMay.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-fall-2019/assignment-8-PhoenixMay/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-fall-2019/assignment-8-PhoenixMay#readme",
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.7.8",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "bcryptjs": "^2.4.3"
+  }
+}

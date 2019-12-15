@@ -1,0 +1,34 @@
+<div class="row center">
+  <div class="col-12 col-md-6">
+    <nb-card accent="info">
+      <nb-card-header>
+        <div class="title">
+<!--Editing function also let user edit their profile-->
+          <div >My Profile</div>
+          <div class="action">
+            <nb-actions>
+              <nb-action nbTooltip="Edit Profile" nbTooltipPlacement="bottom" nbTooltipStatus="primary" icon='settings-2-outline' routerLink="/pages/profile/edit">Edit</nb-action>
+            </nb-actions>
+          </div>
+        </div>
+      </nb-card-header>
+      <nb-card-body>
+        <div class="info">
+          <div class="picture">
+            <nb-user [picture] = "myProfile?.profileImg"
+            [name]="myProfile?.name"
+            size = "giant"
+            onlyPicture>
+            </nb-user>
+          </div>
+<!--Render user's profile detail-->
+          <div class="details">
+            <h4 class="name">{{myProfile.name}}</h4>
+            <div class="location">{{myProfile.location}}</div>
+            <div class="bio">{{myProfile.bio}}</div>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>

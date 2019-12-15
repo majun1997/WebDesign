@@ -1,0 +1,23 @@
+.displaypane{
+    background-color: aqua;
+    margin:auto;
+    width:98%;
+    height: 500px;
+    margin-top: 10px;
+    overflow: scroll;
+}
+table{
+    border: 1px solid black;
+    
+    margin: auto;
+    border-collapse: collapse;
+    table-layout:fixed;
+    
+}
+td {
+    border: 1px solid black;
+    /*允许在单词内换行。*/
+    word-break: break-word;
+    /*设置宽度*/
+    width: 100px;
+}

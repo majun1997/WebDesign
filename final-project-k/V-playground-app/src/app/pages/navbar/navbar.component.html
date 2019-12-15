@@ -1,0 +1,33 @@
+<nb-layout>
+    <nb-layout-header fixed >
+      <div class="docs-page">
+        <div class="section left">
+          <div class="logo">
+            <a routerLink="/pages">V Playground</a>
+          </div>
+        </div>
+<!--Main Navbar to give user navigation in this app-->
+        <div class="section middle">
+          <ul class="menu-items">
+            <li class="menu-item"><a routerLink="/pages/artworks">Artworks</a></li>
+            <li class="menu-item"><a routerLink="/pages/member-space">My Space</a></li>
+            <li class="menu-item"><a routerLink="/pages/social">Social</a></li>
+            <li class="menu-item"><a routerLink="/pages/favorites">Favorites</a></li>
+            <li nbTooltip="Turn on the speaker and press your keyboard!" nbTooltipStatus="info" class="menu-item"><a routerLink="/pages/patatap">Have Fun</a></li>
+            <a href="#" id="menu-icon"></a>
+          </ul>
+        </div>
+        <div class="section right">
+          <nb-user [name]="member?.name"
+          [picture] = "member?.profileImg"
+          [nbContextMenu]="items"
+          nbContextMenuTag="my-context-menu">
+          </nb-user>
+        </div>
+      </div>
+    </nb-layout-header>
+    <nb-layout-column>
+      <router-outlet></router-outlet>
+    </nb-layout-column>
+</nb-layout>
+

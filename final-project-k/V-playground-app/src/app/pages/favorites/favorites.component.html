@@ -1,0 +1,25 @@
+<div class="main-panel show-grid row">
+
+
+    <div class="display-panel col-md-4 col-xs-6 artwork" *ngFor="let artwork of artworklist">
+        <!--use ng switch to choose the different tag of artwork-->
+        <nb-card size="small">
+            <nb-card-body>
+              <div class="artwork-video" *ngIf="artwork.artworkdetail.artworktype === 'input-youtube'" (click)=handleclick(artwork._id) >
+                  <iframe width="480" height="320" [src]="artwork.artworkdetail.url | ArtworkpipeComponent" frameborder="0" allowfullscreen="0" ></iframe>
+              </div>
+              <!-- <div *ngIf="artwork.artworkdetail.artworktype === 'input-mp4'" (click)=handleclick(artwork._id) >
+                  <video  onmouseover="this.play()" onmouseout="this.load()" class="video-js vjs-default-skin" loop  data-setup='{}' poster="{{artwork.artworkdetail.poster}}" >
+                      <source src='{{artwork.artworkdetail.url}}; ' type="video/mp4">
+                  </video>
+              </div> -->
+              <div class="artwork-img" *ngIf="artwork.artworkdetail.artworktype === 'input-photo'"  (click)=handleclick(artwork._id)>
+                  <img src='{{artwork.artworkdetail.url}}'>
+              </div>
+              <div class="hover-menu down">{{artwork.name}}
+                <a class="button detail" (click)=handleclick(artwork._id) >Detail</a>
+              </div>
+            </nb-card-body>
+          </nb-card>
+    </div>
+</div>

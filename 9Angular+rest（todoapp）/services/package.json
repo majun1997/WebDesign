@@ -1,0 +1,34 @@
+{
+  "name": "ass8",
+  "version": "1.0.0",
+  "description": "this is assignment 8",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-fall-2019/assignment-8-NEUJunMA.git"
+  },
+  "keywords": [
+    "mangodb"
+  ],
+  "author": "JunMA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-fall-2019/assignment-8-NEUJunMA/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-fall-2019/assignment-8-NEUJunMA#readme",
+  "devDependencies": {
+    "mongodb": "^3.3.3",
+    "mongoose": "^5.7.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "rxjs": "^6.5.3",
+    "url-loader": "^2.1.0"
+  }
+}

@@ -1,0 +1,35 @@
+//this scss is for header and i think only include basic attribution
+.header{    
+    
+    position: fixed;
+    z-index: inherit;
+    border: 1px solid $header-color;
+    opacity:1;
+    width:99%;
+    height: 50px;
+    color: $header-color;
+    font-size: 18px;
+    
+
+    background-color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    .welcome{
+        margin-top: 15px;
+        float:left;
+        margin-left:50px;
+    }
+    .contactheading{
+        margin-top: 15px;
+        float:right;
+        margin-right:50px;
+    }
+    margin-bottom: 100px;
+}
+// set width and height and flow with the window.
+
+
+.contactheading a {
+    text-decoration: none;
+    text-decoration-color: $link-color;
+}
+/*this scss is for the header*/
