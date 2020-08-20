@@ -32,7 +32,7 @@
     "request": "^2.88.0"
   },
   "dependencies": {
-    "bcrypt": "^3.0.7",
+    "bcrypt": "^5.0.0",
     "bcryptjs": "^2.4.3"
   }
 }
